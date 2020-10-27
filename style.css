@@ -1,0 +1,102 @@
+.custom-background {
+  background-color: #212529;
+}
+
+.head{
+  margin-top:20px;
+}
+
+h1, h2, h3 {
+  color: #fff !important;
+  font-family: 'Rubik', sans-serif !important;
+}
+
+h1{
+  font-weight:300 !important;
+}
+
+h3{
+  font-weight:300 !important;
+}
+
+.aggiornamenti{
+  font-family: 'Rubik', sans-serif;
+  color:#8c8c8c;
+  font-size: 13px;
+}
+
+.content{
+  margin-top:60px;
+}
+
+p{
+  color:#fff;
+  font-size:16px;
+  font-weight:300;
+}
+
+.modal-body p,h5{
+  color: #000;
+  font-family: 'Rubik', sans-serif !important;
+}
+
+th {
+  font-family: 'Rubik', sans-serif !important;
+  font-size:13px;
+}
+
+td {
+  font-family: 'Rubik', sans-serif !important;
+  font-size:13px;
+  font-weight:300;
+}
+
+.header{
+  position:sticky;
+  top: 0 ;
+  background-color:#212529;
+}
+
+a{
+  color:#fff !important;
+}
+
+a:hover{
+  color:green !important;
+}
+
+
+.bi::before {
+  display: inline-block;
+  content: "";
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+}
+
+btn-outline-light{
+  font: 'Rubik', sans-serif !important;
+}
+
+.tabella{
+  margin-top:40px;
+}
+
+#alert-mappa{
+  font-size:13px !important;
+}
+
+#footer{
+  margin-bottom:40px;
+}
+
+@media (max-width: 575.98px) { 
+
+  h1{
+  font-size:2rem !important;
+  margin-bottom:20px !important;
+}
+
+
+
+}
