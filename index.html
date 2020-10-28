@@ -1,105 +1,361 @@
 <!doctype html>
 <html lang="it">
-  <head>
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N34RRWF84K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-N34RRWF84K');
-</script>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N34RRWF84K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="/favicon/favicon.ico">
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-    <title>COVID19 Teramo</title>
-  </head>
-  
-   <!-- Body -->
-  <body class="custom-background">
-    <div class="container head">
-    
- <!-- Header -->
+    gtag('config', 'G-N34RRWF84K');
+  </script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="/favicon/favicon.ico">
+
+  <title>COVID19 Teramo</title>
+</head>
+
+<!-- Body -->
+
+<body class="custom-background">
+  <div class="container head">
+
+    <!-- Header -->
     <h1>Situazione sanitaria emergenza COVID-19</h1>
     <h3>Provincia di Teramo</h3>
-    <p class="aggiornamenti">Ultimo aggiornamento 28/10 ore 14.00</p>
-      </div>
-    
-<!-- Mappa --> 
-    <div class="container content">
-      
-      <p class="" id="mappa">Mappa attualmente positivi</p>
-      
-      <div class="alert alert-warning alert-dismissible fade show d-none" id="alert-mappa" role="alert">
-  <strong>Mappa in aggiornamento!</strong> Per i dati aggiornati consultare la tabella.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-    
-<div class='tableauPlaceholder' id='viz1603791851000' style='position: relative'><noscript><a href='https:&#47;&#47;www.gianlucasfratato.com&#47;covid&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;Cartella1_16027977672900&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Cartella1_16027977672900&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;Cartella1_16027977672900&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='it' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1603791851000');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-</div>
-    
-    
- <!-- Lista Comuni -->
-    <div class="container tabella">
-      <p>Lista comuni</p>
-      <table class="table table-striped table-dark">
-<thead>
-    <tr>
-      <th scope="col" class="align-baseline header">Comune</th>
-      <th scope="col" class="align-baseline header">Attualmente positivi</th>
-      <th scope="col" class="align-baseline header">Ultime 24 ore</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Alba Adriatica <a data-toggle="modal" data-target="#myModal"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-  <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
-  <circle cx="8" cy="4.5" r="1"/>
-      </svg></a></td><td>23</td><td style="color:red">+2</td></tr><tr><td>Ancarano</td><td>2</td><td>0</td></tr><tr><td>Arsita</td><td>2</td><td>0</td></tr><tr><td>Atri</td><td>38</td><td style="color:red">+17</td></tr><tr><td>Basciano</td><td>5</td><td>0</td></tr><tr><td>Bellante</td><td>50</td><td style="color:red">+25</td></tr><tr><td>Bisenti</td><td>36</td><td>0</td></tr><tr><td>Campli</td><td>15</td><td>0</td></tr><tr><td>Canzano</td><td>0</td><td>0</td></tr><tr><td>Castel Castagna</td><td>1</td><td>0</td></tr><tr><td>Castellalto</td><td>17</td><td style="color:red">+5</td></tr><tr><td>Castelli</td><td>12</td><td style="color:red">+2</td></tr><tr><td>Castiglione Messer Raimondo</td><td>4</td><td>0</td></tr><tr><td>Castilenti</td><td>2</td><td>0</td></tr><tr><td>Cellino Attanasio</td><td>2</td><td>0</td></tr><tr><td>Cermignano</td><td>1</td><td>0</td></tr><tr><td>Civitella del Tronto</td><td>5</td><td>0</td></tr><tr><td>Colledara</td><td>12</td><td style="color:red">+4</td></tr><tr><td>Colonnella</td><td>15</td><td style="color:green">-8</td></tr><tr><td>Controguerra</td><td>16</td><td>0</td></tr><tr><td>Corropoli</td><td>6</td><td style="color:red">+3</td></tr><tr><td>Crognaleto</td><td>27</td><td style="color:red">+9</td></tr><tr><td>Fano Adriano</td><td>0</td><td>0</td></tr><tr><td>Giulianova</td><td>58</td><td style="color:red">+8</td></tr><tr><td>Isola del Gran Sasso d'Italia</td><td>97</td><td style="color:red">+20</td></tr><tr><td>Martinsicuro</td><td>42</td><td style="color:red">+12</td></tr><tr><td>Montefino</td><td>1</td><td>0</td></tr><tr><td>Montorio al Vomano</td><td>135</td><td style="color:red">+6</td></tr><tr><td>Morro d'Oro</td><td>0</td><td>0</td></tr><tr><td>Mosciano Sant'Angelo</td><td>15</td><td style="color:red">+5</td></tr><tr><td>Nereto</td><td>21</td><td style="color:red">+2</td></tr><tr><td>Notaresco</td><td>16</td><td style="color:red">+9</td></tr><tr><td>Penna Sant'Andrea</td><td>5</td><td>0</td></tr><tr><td>Pineto</td><td>45</td><td>0</td></tr><tr><td>Rocca Santa Maria</td><td>0</td><td>0</td></tr><tr><td>Roseto degli Abruzzi</td><td>28</td><td>0</td></tr><tr><td>Sant'Egidio alla Vibrata</td><td>59</td><td style="color:red">+6</td></tr><tr><td>Sant'Omero</td><td>23</td><td>0</td></tr><tr><td>Silvi</td><td>34</td><td>0</td></tr><tr><td>Teramo</td><td>178</td><td style="color:red">+12</td></tr><tr><td>Torano Nuovo</td><td>9</td><td>0</td></tr><tr><td>Torricella Sicura</td><td>15</td><td>0</td></tr><tr><td>Tortoreto</td><td>15</td><td>0</td></tr><tr><td>Tossicia</td><td>12</td><td>0</td></tr><tr><td>Valle Castellana</td><td>2</td><td>0</td></tr>
-  </tbody>
-</table>
-      </div>
-    
- <!-- Footer -->   
-    <div class="container" id="footer">
-      <p style="font-size:15px;color:#8c8c8c;margin-top:0;">Fonti: Dati raccolti a partire da comunicazioni ufficiali dei sindaci della provincia e organi di stampa.
-      <p style="font-size:15px; color:#fff;margin-top:40px;">Per info o segnalazioni: <a href="mailto:info@covid19teramo.it" style="text-decoration:none;font-weight:bold;">info@covid19teramo.it</a>.</p>
-      <p style="font-size:15px; color:#fff;margin-top:20px;">© All rights reserved</p>
-      
+    <p class="aggiornamenti">Ultimo aggiornamento 28/10 ore 22.00</p>
+  </div>
+
+  <!-- Mappa -->
+  <div class="container content">
+
+    <p class="" id="mappa">Mappa attualmente positivi</p>
+
+    <div class="alert alert-warning alert-dismissible fade show d-none" id="alert-mappa" role="alert">
+      <strong>Mappa in aggiornamento!</strong> Per i dati aggiornati consultare la tabella.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
-    
-    
- <!-- Modale -->
-    <div class="modal" id="myModal" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Alba Adriatica</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>I dati vengono comunicati con cadenza settimanale.</p>
+
+    <div class='tableauPlaceholder' id='viz1603791851000' style='position: relative'><noscript><a href='https:&#47;&#47;www.gianlucasfratato.com&#47;covid&#47;'><img alt=' '
+            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;Cartella1_16027977672900&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Cartella1_16027977672900&#47;Dashboard1' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='no' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;Cartella1_16027977672900&#47;Dashboard1&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='it' />
+        <param name='filter' value='publish=yes' />
+      </object></div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1603791851000');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '100%';
+      vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
+
+
+  <!-- Lista Comuni -->
+  <div class="container tabella">
+    <p>Lista comuni</p>
+    <table class="table table-striped table-dark">
+      <thead>
+        <tr>
+          <th scope="col" class="align-baseline header">Comune</th>
+          <th scope="col" class="align-baseline header">Attualmente positivi</th>
+          <th scope="col" class="align-baseline header">Ultime 24 ore</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alba Adriatica <a data-toggle="modal" data-target="#myModal"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z" />
+                <circle cx="8" cy="4.5" r="1" />
+              </svg></a></td>
+          <td>34</td>
+          <td style="color:red">+11</td>
+        </tr>
+        <tr>
+          <td>Ancarano</td>
+          <td>2</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Arsita</td>
+          <td>2</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Atri</td>
+          <td>38</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Basciano</td>
+          <td>5</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Bellante</td>
+          <td>50</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Bisenti</td>
+          <td>53</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Campli</td>
+          <td>15</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Canzano</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Castel Castagna</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Castellalto</td>
+          <td>17</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Castelli</td>
+          <td>12</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Castiglione Messer Raimondo</td>
+          <td>4</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Castilenti</td>
+          <td>2</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Cellino Attanasio</td>
+          <td>2</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Cermignano</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Civitella del Tronto</td>
+          <td>5</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Colledara</td>
+          <td>12</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Colonnella</td>
+          <td>15</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Controguerra</td>
+          <td>16</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Corropoli</td>
+          <td>6</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Crognaleto</td>
+          <td>27</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Fano Adriano</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Giulianova</td>
+          <td>61</td>
+          <td style="color:red">+3</td>
+        </tr>
+        <tr>
+          <td>Isola del Gran Sasso d'Italia</td>
+          <td>155</td>
+          <td style="color:red">+58</td>
+        </tr>
+        <tr>
+          <td>Martinsicuro</td>
+          <td>42</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Montefino</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Montorio al Vomano</td>
+          <td>137</td>
+          <td style="color:red">+2</td>
+        </tr>
+        <tr>
+          <td>Morro d'Oro</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Mosciano Sant'Angelo</td>
+          <td>2</td>
+          <td style="color:red">+7</td>
+        </tr>
+        <tr>
+          <td>Nereto</td>
+          <td>21</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Notaresco</td>
+          <td>16</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Penna Sant'Andrea</td>
+          <td>6</td>
+          <td style="color:red">+1</td>
+        </tr>
+        <tr>
+          <td>Pineto</td>
+          <td>45</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Rocca Santa Maria</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Roseto degli Abruzzi</td>
+          <td>28</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Sant'Egidio alla Vibrata</td>
+          <td>59</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Sant'Omero</td>
+          <td>23</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Silvi</td>
+          <td>34</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Teramo</td>
+          <td>204</td>
+          <td style="color:red">+26</td>
+        </tr>
+        <tr>
+          <td>Torano Nuovo</td>
+          <td>9</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Torricella Sicura</td>
+          <td>15</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Tortoreto</td>
+          <td>18</td>
+          <td style="color:red">+3</td>
+        </tr>
+        <tr>
+          <td>Tossicia</td>
+          <td>14</td>
+          <td style="color:red">+2</td>
+        </tr>
+        <tr>
+          <td>Valle Castellana</td>
+          <td>2</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <div class="container" id="footer">
+    <p style="font-size:15px;color:#8c8c8c;margin-top:0;">Fonti: Dati raccolti a partire da comunicazioni ufficiali dei sindaci della provincia e organi di stampa.
+    <p style="font-size:15px; color:#fff;margin-top:40px;">Per info o segnalazioni: <a href="mailto:info@covid19teramo.it" style="text-decoration:none;font-weight:bold;">info@covid19teramo.it</a>.</p>
+    <p style="font-size:15px; color:#fff;margin-top:20px;">© All rights reserved</p>
+
+  </div>
+
+
+  <!-- Modale -->
+  <div class="modal" id="myModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Alba Adriatica</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>I dati vengono comunicati con cadenza settimanale.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
 </html>
