@@ -78,9 +78,6 @@ btn-outline-light{
   font: 'Rubik', sans-serif !important;
 }
 
-.tabella{
-  margin-top:40px;
-}
 
 #alert-mappa{
   font-size:13px !important;
@@ -90,7 +87,7 @@ btn-outline-light{
   margin-bottom:40px;
 }
 
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
 
   h1{
   font-size:2rem !important;
