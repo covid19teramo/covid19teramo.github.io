@@ -2,7 +2,7 @@
   background-color: #212529;
 }
 
-.head{
+.head  {
   margin-top:20px;
 }
 
@@ -11,11 +11,11 @@ h1, h2, h3 {
   font-family: 'Rubik', sans-serif !important;
 }
 
-h1{
+h1 {
   font-weight:300 !important;
 }
 
-h3{
+h3 {
   font-weight:100 !important;
 }
 
@@ -23,7 +23,7 @@ h3{
   color:red;
 }
 
-h5{
+h5 {
   font-size:1em;
   color:#fff !important;
   font-weight:300 !important;
@@ -32,6 +32,15 @@ h5{
 
 p {
   font-weight:300 !important;
+}
+
+.badge{
+  font-size: .8em;
+  font-weight: 700;
+}
+
+.badge-warning {
+    color: #212529;
 }
 
 .aggiornamenti{
