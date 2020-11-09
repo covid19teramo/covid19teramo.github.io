@@ -2,8 +2,8 @@
   background-color: #212529;
 }
 
-.head  {
-  margin-top:20px;
+.head {
+  margin-top: 20px;
 }
 
 h1, h2, h3 {
@@ -12,77 +12,104 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-weight:300 !important;
+  font-weight: 300 !important;
 }
 
 h3 {
-  font-weight:100 !important;
+  font-weight: 100 !important;
 }
 
-.red{
-  color:red;
+.red {
+  color: red;
 }
 
 h5 {
-  font-size:1em;
-  color:#fff !important;
-  font-weight:300 !important;
+  font-size: 1em;
+  color: #fff !important;
+  font-weight: 300 !important;
   margin-bottom: 1rem;
 }
 
 p {
-  font-weight:300 !important;
+  font-weight: 300;
 }
 
-.badge{
+.data-title {
+  font-size: 1.2em;
+  color: #ffffffb5;
+  margin: 0;
+  font-family: 'Rubik', sans-serif !important;
+  margin-top: 20px;
+}
+
+.data-number {
+  font-size: 4em;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif !important;
+  margin: 0;
+  line-height: 1;
+}
+
+.data {
+  margin-top: 30px;
+  border-bottom: 1px solid #ffffff2e;
+  padding: 10px 0 30px 0;
+  border-top: 1px solid #ffffff2e;
+}
+
+hr .solid {
+  border-top: 1px solid #fff;
+}
+
+.badge {
   font-size: .8em;
   font-weight: 700;
 }
 
 .badge-warning {
-    color: #212529;
+  color: #212529;
 }
 
-.aggiornamenti{
+.aggiornamenti {
   font-family: 'Rubik', sans-serif;
-  color:#8c8c8c;
+  color: #8c8c8c;
   font-size: 15px;
 }
 
-.content{
-  margin-top:60px;
+.content {
+  margin-top: 60px;
 }
 
-.modal-body p,h5{
+.modal-body p, h5 {
   color: #000;
   font-family: 'Rubik', sans-serif !important;
 }
 
 th {
   font-family: 'Rubik', sans-serif !important;
-  font-size:14px;
+  font-size: 14px;
 }
 
 td {
   font-family: 'Rubik', sans-serif !important;
-  font-size:14px;
-  font-weight:300;
+  font-size: 14px;
+  font-weight: 300;
 }
 
-.header{
-  position:sticky;
-  top: 0 ;
-  background-color:#212529;
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #212529;
 }
 
-a{
-  color:#fff !important;
+a {
+  color: #fff !important;
 }
 
-a:hover{
-  color:cyan !important;
+a:hover {
+  color: cyan !important;
 }
-
 
 .bi::before {
   display: inline-block;
@@ -92,30 +119,33 @@ a:hover{
   background-size: 1rem 1rem;
 }
 
-btn-outline-light{
+btn-outline-light {
   font: 'Rubik', sans-serif !important;
 }
 
-
-#alert-mappa{
-  font-size:13px !important;
+#alert-mappa {
+  font-size: 13px !important;
 }
 
-#footer{
-  margin-bottom:40px;
+#footer {
+  margin-bottom: 40px;
 }
 
 @media (max-width: 575.98px) {
+  h1 {
+    font-size: 2rem !important;
+    margin-bottom: 20px !important;
+  }
 
-  h1{
-  font-size:2rem !important;
-  margin-bottom:20px !important;
-}
+  .nome-comune {
+    width: 170px;
+  }
 
-.nome-comune {
-  width: 170px;
-}
+  .data-title {
+    font-size: 0.9em;
+  }
 
-
-
+  .data-number {
+    font-size: 3em;
+  }
 }
