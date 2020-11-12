@@ -59,6 +59,10 @@ p {
   border-top: 1px solid #ffffff2e;
 }
 
+.percentage {
+  font-size:0.75em;
+}
+
 hr .solid {
   border-top: 1px solid #fff;
 }
@@ -148,5 +152,9 @@ btn-outline-light {
 
   .data-number {
     font-size: 2.8em;
+  }
+
+  .percentage {
+    font-size:0.5em;
   }
 }
