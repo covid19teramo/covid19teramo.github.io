@@ -2,6 +2,10 @@
   background-color: #212529;
 }
 
+body{
+  font-family: 'Rubik', sans-serif;
+}
+
 .head {
   margin-top: 20px;
 }
@@ -60,7 +64,7 @@ p {
 }
 
 .percentage {
-  font-size:0.75em;
+  font-size: 0.75em;
 }
 
 hr .solid {
@@ -128,8 +132,9 @@ btn-outline-light {
   font: 'Rubik', sans-serif !important;
 }
 
-#alert-mappa {
-  font-size: 13px !important;
+#alert{
+  font-size: 15px !important;
+  font-weight: 300;
 }
 
 #footer {
@@ -155,6 +160,6 @@ btn-outline-light {
   }
 
   .percentage {
-    font-size:0.5em;
+    font-size: 0.5em;
   }
 }
