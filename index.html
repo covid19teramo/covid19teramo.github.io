@@ -142,7 +142,7 @@
   <!-- Lista Comuni -->
   <div class="container content">
     <h5>Lista comuni</h5>
-    <div id="alert"class="alert alert-warning alert-dismissible fade show" role="alert">
+    <div id="alert"class="alert alert-warning alert-dismissible fade show d-none" role="alert">
   <span style="font-weight:700;">Dati parziali</span> In aggiornamento...
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
@@ -169,7 +169,7 @@
         </tr>
         <tr>
           <td>Arsita</td>
-          <td>9</td>
+          <td>8</td>
           <td></td>
         </tr>
         <tr>
@@ -209,8 +209,8 @@
         </tr>
         <tr>
           <td>Castellalto</td>
-          <td>114</td>
-          <td></td>
+          <td>129</td>
+          <td><span class="badge badge-pill badge-warning">+15</span></td>
         </tr>
         <tr>
           <td>Castelli</td>
@@ -346,13 +346,13 @@
         </tr>
         <tr>
           <td>Roseto</td>
-          <td>156</td>
-          <td></td>
+          <td>172</td>
+          <td><span class="badge badge-pill badge-warning">+16</span></td>
         </tr>
         <tr>
           <td>Sant'Egidio alla V.</td>
-          <td>82</td>
-          <td></td>
+          <td>83</td>
+          <td><span class="badge badge-pill badge-warning">+1</span></td>
         </tr>
         <tr>
           <td>Sant'Omero</td>
@@ -390,8 +390,12 @@
         </tr>
         <tr>
           <td>Tossicia</td>
-          <td>24</td>
-          <td></td>
+          <td class="text-muted">59 <a data-toggle="modal" data-target="#Tossicia" class="align-middle"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z" />
+                <circle cx="8" cy="4.5" r="1">
+              </svg></a></td>
+          <td><span class="badge badge-pill badge-warning">+35</span></td>
         </tr>
         <tr>
           <td>Valle Castellana</td>
@@ -416,18 +420,29 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h6 class="modal-title" id="exampleModalLabel" style="font-size:18px;">Attenzione</h6>
+          <h6 class="modal-title" id="exampleModalLabel" style="font-size:18px;">Dato complessivo non verificato</h6>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <p style="color:#686868;">Alcuni sindaci lamentano la mancanza negli ultimi report del SIESP del numero complessivo dei positivi e delle sorveglianze attive. I numeri riportati con questo simbolo <svg width="1.2em" height="1.2em"
-              viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-              <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z" />
-              <circle cx="8" cy="4.5" r="1" />
-            </svg> sono da intendere come delle stime.</p>
+          <p style="color:#686868;">Alcuni sindaci lamentano la mancanza negli ultimi report del SIESP del numero complessivo dei positivi e delle sorveglianze attive. Il numero riportato rappresenta una stima.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="Tossicia" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel" style="font-size:18px;">Tossicia</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p style="color:#686868;">Su "Il Centro" del 14/11/2020 sono riportati 35 nuovi contagi come conseguenza dei 450 tamponi eseguiti mercoledì pomeriggio ai residenti. Tuttavia il dato non è ancora stato confermato dal Sindaco.</p>
         </div>
       </div>
     </div>
