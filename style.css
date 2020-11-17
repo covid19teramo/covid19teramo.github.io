@@ -103,7 +103,7 @@ td {
   font-weight: 300;
 }
 
-.header {
+.table-responsive-sm .header {
   position: sticky;
   top: 0;
   background-color: #212529;
