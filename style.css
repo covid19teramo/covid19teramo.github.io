@@ -103,7 +103,7 @@ td {
   font-weight: 300;
 }
 
-.table-responsive-sm .header {
+.header {
   position: sticky;
   top: 0;
   background-color: #212529;
@@ -144,8 +144,12 @@ btn-outline-light {
     margin-bottom: 20px !important;
   }
 
+  .table td, .table th {
+    padding: .75rem .25rem .75rem .25rem;
+  }
+
   .nome-comune {
-    width: 170px;
+    width: 140px;
   }
 
   .data-title {
