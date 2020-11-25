@@ -129,6 +129,10 @@ btn-outline-light {
   font: 'Rubik', sans-serif !important;
 }
 
+.flourish-credit{
+  display:none !important;
+}
+
 #alert{
   font-size: 13px !important;
   font-weight: 300;
