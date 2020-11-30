@@ -2,7 +2,6 @@
   background-color: #212529;
 }
 
-
 .head {
   margin-top: 20px;
 }
@@ -28,8 +27,7 @@ h3 {
 h5 {
   font-size: 1em;
   color: #fff !important;
-  font-weight: 300 !important;
-  margin-bottom: 1rem;
+  font-weight: 500 !important;
 }
 
 p {
@@ -129,17 +127,32 @@ btn-outline-light {
   font: 'Rubik', sans-serif !important;
 }
 
-.flourish-credit{
-  display:none !important;
+.flourish-credit {
+  display: none !important;
 }
 
-#alert{
+#alert {
   font-size: 13px !important;
   font-weight: 300;
 }
 
+#trend {
+  font-size: 0.9em;
+  color: rgb(169,169,169);
+  margin-bottom: 10px;
+}
+
 #footer {
   margin-bottom: 40px;
+  font-size: 14px;
+  color: #9f9f9f !important;
+  font-weight: 300;
+  margin-top: 40px;
+}
+
+#fb-icon {
+  font-size: 2em;
+  color: #9f9f9f !important;
 }
 
 @media (max-width: 575.98px) {
@@ -167,4 +180,5 @@ btn-outline-light {
   .percentage {
     font-size: 0.5em;
   }
+
 }
