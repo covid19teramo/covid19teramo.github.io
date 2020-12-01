@@ -166,7 +166,7 @@ btn-outline-light {
   }
 
   .nome-comune {
-    width: 140px;
+    width: 150px;
   }
 
   .data-title {
@@ -181,4 +181,7 @@ btn-outline-light {
     font-size: 0.5em;
   }
 
+  .positivi{
+    width:100px;
+  }
 }
